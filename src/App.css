@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+h1, h2, h3, p, a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #dc3545;
+}
+
+nav .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.scale-hover-effect {
+  transition: transform .5s ease;
+}
+
+.scale-hover-effect:hover {
+  transform: scale(1.05);
+}
+
+.height-75 {
+  height: 75vh;
+}
+
+.footer-social-icons li:hover svg {
+  fill: #212529;
+}
+
+.footer-navigation li:hover {
+  color: #212529;
+}
+
+@media only screen and (max-width: 992px) {
+  #basic-navbar-nav {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 0.375rem;
+  }
+
+  .navbar .nav-link {
+    color: #212529;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
