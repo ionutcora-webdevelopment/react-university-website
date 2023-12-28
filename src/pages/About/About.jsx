@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 import { Link } from 'react-router-dom';
 import AboutUsSectionImg from '../../utils/images/about-us-section-img.jpg';
-import ChooseSection from '../../components/ChooseSection/ChooseSection';
+// import ChooseSection from '../../components/ChooseSection/ChooseSection';
 import Person1 from '../../utils/images/person1.jpg';
 import Person2 from '../../utils/images/person2.jpg';
 import Person3 from '../../utils/images/person3.jpg';
@@ -12,6 +12,9 @@ import Person6 from '../../utils/images/person6.jpg';
 import Person7 from '../../utils/images/person7.jpg';
 import Person8 from '../../utils/images/person8.jpg';
 import Person9 from '../../utils/images/person9.jpg';
+import LondonLocationImg from '../../utils/images/London-location.jpg';
+import ManchesterLocationImg from '../../utils/images/Manchester-location.jpg';
+import LiverpoolLocationImg from '../../utils/images/Liverpool-location.jpg';
 
 const persons = [
     {
@@ -76,13 +79,34 @@ function About() {
                     <img src={AboutUsSectionImg} className='img-fluid w-75' alt="" />
                 </div>
             </div>
+            
         </div>
 
-        <div className='bg-dark text-light py-5'>
+        {/* <div className='bg-dark text-light py-5'>
             <ChooseSection />
+        </div> */}
+
+        <div className='bg-dark text-light p-5'>
+            <div className='container'>
+                <h2 className='text-center mb-5'>Our Labs</h2>
+                <div className='row g-4'>
+                    <div className='col-lg-4 d-flex flex-column align-items-center'>
+                        <img src={LondonLocationImg} className='img-fluid' alt="" />
+                        <h3 className='text-center mt-3'>Applied Electromagnetics lab</h3>
+                    </div>
+                    <div className='col-lg-4 d-flex flex-column align-items-center'>
+                        <img src={ManchesterLocationImg} className='img-fluid' alt="" />
+                        <h3 className='text-center mt-3'>Communication Lab</h3>
+                    </div>
+                    <div className='col-lg-4 d-flex flex-column align-items-center'>
+                        <img src={LiverpoolLocationImg} className='img-fluid' alt="" />
+                        <h3 className='text-center mt-3'>Microelectronics Lab</h3>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div className='bg-body-tertiary py-5'>
+        {/* <div className='bg-body-tertiary py-5'>
             <div className="container">
                 <h2 className='text-center mb-5'>Our Winners</h2>
                 <div className='row g-4'>
@@ -93,8 +117,9 @@ function About() {
                     ))}
                 </div>
             </div>
-        </div>
+        </div> */}
     </div>
+
   )
 }
 
